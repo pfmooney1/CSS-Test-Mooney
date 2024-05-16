@@ -1,0 +1,552 @@
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-MediumItalic.eot');
+    src: local('Pulp Display Medium Italic'), local('PulpDisplay-MediumItalic'),
+        url('fonts/PulpDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-MediumItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-MediumItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-Bold.eot');
+    src: local('Pulp Display Bold'), local('PulpDisplay-Bold'),
+        url('fonts/PulpDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-Bold.woff2') format('woff2'),
+        url('fonts/PulpDisplay-Bold.woff') format('woff'),
+        url('fonts/PulpDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-BoldItalic.eot');
+    src: local('Pulp Display Bold Italic'), local('PulpDisplay-BoldItalic'),
+        url('fonts/PulpDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-BoldItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-BoldItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('fonts/PulpDisplay-ExtraBold.eot');
+    src: local('Pulp Display Extra Bold'), local('PulpDisplay-ExtraBold'),
+        url('fonts/PulpDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-ExtraBold.woff2') format('woff2'),
+        url('fonts/PulpDisplay-ExtraBold.woff') format('woff'),
+        url('fonts/PulpDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-Light.eot');
+    src: local('Pulp Display Light'), local('PulpDisplay-Light'),
+        url('fonts/PulpDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-Light.woff2') format('woff2'),
+        url('fonts/PulpDisplay-Light.woff') format('woff'),
+        url('fonts/PulpDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-Medium.eot');
+    src: local('Pulp Display Medium'), local('PulpDisplay-Medium'),
+        url('fonts/PulpDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-Medium.woff2') format('woff2'),
+        url('fonts/PulpDisplay-Medium.woff') format('woff'),
+        url('fonts/PulpDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('fonts/PulpDisplay-ExtraLight.eot');
+    src: local('Pulp Display Extra Light'), local('PulpDisplay-ExtraLight'),
+        url('fonts/PulpDisplay-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-ExtraLight.woff2') format('woff2'),
+        url('fonts/PulpDisplay-ExtraLight.woff') format('woff'),
+        url('fonts/PulpDisplay-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('fonts/PulpDisplay-ExtraBoldItalic.eot');
+    src: local('Pulp Display Extra Bold Italic'), local('PulpDisplay-ExtraBoldItalic'),
+        url('fonts/PulpDisplay-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-ExtraBoldItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-ExtraBoldItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-RegularItalic.eot');
+    src: local('Pulp Display Italic'), local('PulpDisplay-RegularItalic'),
+        url('fonts/PulpDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-RegularItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-RegularItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('fonts/PulpDisplay-ExtraLightItalic.eot');
+    src: local('Pulp Display Extra Light Italic'), local('PulpDisplay-ExtraLightItalic'),
+        url('fonts/PulpDisplay-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-ExtraLightItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-ExtraLightItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-LightItalic.eot');
+    src: local('Pulp Display Light Italic'), local('PulpDisplay-LightItalic'),
+        url('fonts/PulpDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-LightItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-LightItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('fonts/PulpDisplay-Regular.eot');
+    src: local('Pulp Display'), local('PulpDisplay-Regular'),
+        url('fonts/PulpDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-Regular.woff2') format('woff2'),
+        url('fonts/PulpDisplay-Regular.woff') format('woff'),
+        url('fonts/PulpDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Semi';
+    src: url('fonts/PulpDisplay-SemiBoldItalic.eot');
+    src: local('Pulp Display Semi Bold Italic'), local('PulpDisplay-SemiBoldItalic'),
+        url('fonts/PulpDisplay-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/PulpDisplay-SemiBoldItalic.woff') format('woff'),
+        url('fonts/PulpDisplay-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Outline';
+    src: url('fonts/PulpDisplay-Outline.eot');
+    src: local('Pulp Display Outline'), local('PulpDisplay-Outline'),
+        url('fonts/PulpDisplay-Outline.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-Outline.woff2') format('woff2'),
+        url('fonts/PulpDisplay-Outline.woff') format('woff'),
+        url('fonts/PulpDisplay-Outline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Semi';
+    src: url('fonts/PulpDisplay-SemiBold.eot');
+    src: local('Pulp Display Semi Bold'), local('PulpDisplay-SemiBold'),
+        url('fonts/PulpDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PulpDisplay-SemiBold.woff2') format('woff2'),
+        url('fonts/PulpDisplay-SemiBold.woff') format('woff'),
+        url('fonts/PulpDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+	--inter: Inter, sans-serif;
+	--pulp: "Pulp Display", sans-serif;
+
+}
+
+body {
+	margin: 0;
+	background: #F0F5FF;
+}
+
+header {
+	width: 100%;
+	height: 132px;
+	background: #FFFFFF;
+}
+
+nav {
+	width: calc(100% - 40px);
+	padding-inline: 20px;
+	height: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: row;
+	margin-inline: auto;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 40em) {
+	nav {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 64em) {
+}
+
+.logo-container .logo {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-container .logo-text {
+	color: #225475;
+	font-weight: 500;
+	size: 15px;
+	line-height: 18px;
+	font-family: var(--pulp);
+	padding-block: -10px 0;
+	padding-inline: 50px 0;
+	margin: -4px 0 0 0;
+	z-index: 10
+
+}
+
+.header-contact-container {
+	max-width: 701px;
+	display: flex;
+	flex-direction: row;
+	padding: 12px 20px;
+	align-items: center;
+	justify-contact: space-between;
+	background: #F7F7FB;
+	border-radius: 8px;
+	gap: 48px;
+}
+
+@media screen and (max-width: 40em) {
+	.logo-container .logo {
+		width: 280px;
+		height: 53px;
+		padding-block: 10px;
+	}
+}
+
+@media screen and (max-width: 64em) {
+	.logo-container .logo {
+		width: 250px;
+		height: 48px;
+		padding-block: 10px;
+	}
+
+	.header-contact-container {
+		padding: 8px 16px;
+		gap: 20px;
+	}
+}
+
+.contact-title-and-hours {
+}
+
+.contact-title {
+	font-family: var(--inter);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19.4px;
+	letter-spacing: -1%;
+	color: #0C395B;
+	padding: 0;
+	margin: 0;
+}
+
+.contact-hours {
+	font-family: var(--inter);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 0;
+	margin: 0;
+	color: #758EB2;
+}
+
+@media screen and (max-width: 40em) {
+
+}
+
+@media screen and (max-width: 64em) {
+	.contact-title {
+		font-size: 12px;
+	}
+
+	.contact-hours {
+		font-size: 10px;
+	}
+}
+
+.contact-icon {
+	background: #2C8DFF;
+	border-radius: 50%;
+	padding: 5px 5px;
+}
+
+.contact-number {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.contact-number a {
+	color: #0C395B;
+	font-family: var(--inter);
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20.5px;
+	text-decoration: none;
+}
+
+.contact-number a:hover {
+	text-decoration: underline;
+}
+
+.contact-extension {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.contact-extension a {
+	color: #0C395B;
+	font-family: var(--inter);
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20.5px;
+	text-decoration: none;
+}
+
+.contact-extension a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 40em) {
+	
+}
+
+@media screen and (max-width: 64em) {
+	.contact-extension {
+		gap: 5px
+	}
+
+	.contact-number a,
+	.contact-extension a {
+		font-size: 14px;
+	}
+}
+
+
+main {
+	max-width: 1200px;
+	width: calc(100% - 40px);
+	padding-inline: 20px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.hero-text {
+	font-family: var(--pulp);
+	font-weight: 400;
+	font-size: 58px;
+	line-height: 63.8px;
+	color: #0F385A;
+	margin-block: 102px 38px;
+}
+
+.hero-extra-text {
+	font-family: var(--pulp);
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 43.2px;
+	color: #0C395B;
+}
+
+.cta-and-image-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+}
+
+@media screen and (max-width: 40em) {
+	
+}
+
+@media screen and (max-width: 64em) {
+	.cta-and-image-container {
+		flex-direction: column;
+	}
+
+}
+
+.cta-box {
+	min-width: 464px;
+	min-height: 266px;
+	background-color: #FFFFFF;
+	border-radius: 12.5px;
+	box-shadow: 0px 5px 56.28px 0px #0B173414;
+	padding: 32px 34px 22px 34px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.cta-title {
+	font-family: var(--pulp);
+	font-size: 33px;
+	font-weight: 400;
+	line-height: 37.57px;
+	text-align: center;
+	color: #0F385A;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 21px;
+}
+
+.cta-button {
+	font-family: var(--inter);
+	padding: 18.76px;
+	border-radius: 7.5px;
+	background: #2C8DFF;
+	color: #FFFFFF;
+	font-family: Inter;
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 27.84px;
+	letter-spacing: -0.015em;
+	text-align: center;
+	border: none;
+	min-width: 394px;
+}
+
+.cta-button:hover {
+	background: #1a5ca9;
+}
+
+
+.cta-phone {
+	font-family: Inter;
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 25.41px;
+	text-align: center;
+	padding: 0;
+	margin-top: 33px;
+	margin-bottom: 5px;
+	color: #0C395B;
+}
+
+.cta-phone .extension {
+	color: inherit;
+}
+.cta-phone a {
+	text-decoration: none;
+}
+
+.cta-phone a:hover {
+	text-decoration: underline;
+}
+
+.cta-hours {
+	font-family: var(--inter);
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 21.78px;
+	letter-spacing: -0.015em;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	color: #555555;
+}
+
+.hero-image-box {
+	background: #E5EEFF;
+	border-radius: 50%;
+	width: 476px;
+	height: 470px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.hero-image {
+	position: relative;
+	border-radius: 50%;
+	width: 452px;
+	height: 446px;
+	bottom: 2px;
+	right: -5px;
+}
+
+footer {
+	width: 100%;
+	height: fit-content;
+}
+footer svg {
+	border-bottom: 40px solid #FFFFFF;
+}
+
+.green-text {
+	color: #5BBB47;
+	white-space: pre;
+}
+
+
+@media screen and (max-width: 40em) {
+	
+}
+
+@media screen and (max-width: 64em) {
+
+}
