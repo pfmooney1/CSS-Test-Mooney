@@ -1,3 +1,5 @@
+/*   Thanks for viewing my project!   */
+
 @font-face {
 	font-family: 'Pulp Display';
 	src: url('fonts/PulpDisplay-Bold.eot');
@@ -80,6 +82,11 @@
 :root {
 	--inter: Inter, sans-serif;
 	--pulp: "Pulp Display", sans-serif;
+	--white: #FFFFFF;
+	--brand-green: #5BBB47;
+	--brand-blue: #2C8DFF;
+	--brand-blue-hover: #1a5ca9;
+	--brand-dark-blue: #0C395B;
 }
 
 body {
@@ -89,34 +96,34 @@ body {
 
 header {
 	width: 100%;
-	background: #FFFFFF;
 	height: 132px;
+	background: var(--white);
 }
 
 nav {
-	width: calc(100% - 40px);
-	padding-inline: 20px;
-	height: 100%;
-	max-width: 1200px;
 	display: flex;
 	flex-direction: row;
-	margin-inline: auto;
-	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid #fff;
+	width: calc(100% - 40px);
+	max-width: 1200px;
+	height: 100%;
+	padding-inline: 20px;
+	margin-inline: auto;
 	gap: 50px;
+	align-items: center;
+	border-bottom: 1px solid var(--white);
 }
 
 @media screen and (max-width: 40em) {
 	header {
 		width: 100%;
-		background: #FFFFFF;
 		height: fit-content;
+		background: var(--white);
 	}
 	nav {
 		flex-direction: column;
-		gap: 20px;
 		padding-bottom: 15px;
+		gap: 20px;
 	}
 }
 
@@ -128,35 +135,36 @@ nav {
 }
 
 .logo-container .logo-text {
-	color: #225475;
+	position: relative;
+	padding-block: 0 0;
+	padding-inline: 50px 0;
+	margin: -6px 0 0 0;
+	z-index: 10;
 	font-weight: 500;
-	size: 15px;
+	font-size: 15px;
 	line-height: 18px;
 	font-family: var(--pulp);
-	padding-block: -10px 0;
-	padding-inline: 50px 0;
-	margin: -4px 0 0 0;
-	z-index: 10
+	color: #225475;
 }
 
 .header-contact-container {
-	max-width: 701px;
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: auto auto auto;
-	padding: 12px 20px;
-	align-items: center;
 	justify-content: space-between;
-	background: #F7F7FB;
-	border-radius: 8px;
+	align-items: center;
 	gap: 48px;
+	max-width: 701px;
+	padding: 12px 20px;
+	border-radius: 8px;
+	background: #F7F7FB;
 }
 
 @media screen and (max-width: 64em) {
 	.logo-container .logo {
+		padding-block: 10px;
 		width: 250px;
 		height: 48px;
-		padding-block: 10px;
 	}
 	.header-contact-container {
 		padding: 8px 16px;
@@ -197,29 +205,27 @@ nav {
 		padding-inline: 24px;
 	}
 	.logo-container .logo {
-		/* width: 180px; */
-		/* height: 34px; */
 		padding-block: 10px;
 	}
 }
 
 .contact-title {
+	padding: 0 0 2px 0;
+	margin: 0;
 	font-family: var(--inter);
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19.4px;
-	color: #0C395B;
-	padding: 0 0 2px 0;
-	margin: 0;
+	color: var(--brand-dark-blue);
 }
 
 .contact-hours {
+	padding: 0;
+	margin: 0;
 	font-family: var(--inter);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 17px;
-	padding: 0;
-	margin: 0;
 	color: #758EB2;
 }
 
@@ -239,7 +245,7 @@ nav {
 }
 
 .contact-icon {
-	background: #2C8DFF;
+	background: var(--brand-blue);
 	border-radius: 50%;
 	padding: 5px 5px;
 	transition: all 0.35s;
@@ -252,7 +258,7 @@ nav {
 }
 
 .contact-number a {
-	color: #0C395B;
+	color: var(--brand-dark-blue);
 	font-family: var(--inter);
 	font-weight: 700;
 	font-size: 17px;
@@ -267,7 +273,7 @@ nav {
 }
 
 .contact-extension a {
-	color: #0C395B;
+	color: var(--brand-dark-blue);
 	font-family: var(--inter);
 	font-weight: 700;
 	font-size: 17px;
@@ -283,14 +289,14 @@ nav {
 
 .contact-number:hover .contact-icon,
 .contact-extension:hover .contact-icon {
-	background: #1a5ca9;
+	background: var(--brand-blue-hover);
 	transition: all 0.25s;
 }
 
 
 @media screen and (max-width: 64em) {
 	.contact-extension {
-		gap: 5px
+		gap: 5px;
 	}
 	.contact-number,
 	.contact-extension {
@@ -318,7 +324,7 @@ nav {
 
 main {
 	max-width: 1200px;
-	width: calc(100% - 40px);
+	width: calc(100% - 60px);
 	padding-inline: 30px;
 	height: 100%;
 	margin: 0 auto;
@@ -326,14 +332,14 @@ main {
 
 .hero-text {
 	position: relative;
+	margin-block: 102px 64px;
+	padding-right: 75px;
+	bottom: 30px; 
 	font-family: var(--pulp);
 	font-weight: 500;
 	font-size: 58px;
 	line-height: 63.8px;
 	color: #0F385A;
-	margin-block: 102px 64px;
-	padding-right: 75px;
-	bottom: 30px; 
 	opacity: 50%;
 	transition: all 1s;
 }
@@ -346,13 +352,13 @@ main {
 
 .hero-extra-text {
 	position: relative;
+	padding-right: 75px;
+	bottom: 30px; 
 	font-family: var(--pulp);
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 43.2px;
-	color: #0C395B;
-	padding-right: 75px;
-	bottom: 30px; 
+	color: var(--brand-dark-blue);
 	opacity: 50%;
 	transition: all 1s;
 }
@@ -368,31 +374,31 @@ main {
 		padding-inline: 20px;
 	}
 	.hero-text {
-		font-size: 38px;
-		line-height: 50px;
 		margin-block: 60px 45px;
 		padding-inline: 30px;
+		font-size: 38px;
+		line-height: 50px;
 		text-align: center;
 	}
 	.hero-extra-text {
+		padding-inline: 30px;
+		margin-block: 45px;
 		font-size: 22px;
 		line-height: 25px;
-		padding-inline: 30px;
 		text-align: center;
-		margin-block: 45px;
 	}
 }
 
 @media screen and (max-width: 40em) {
 	.hero-text {
+		padding-inline: 10px;
 		font-size: 30px;
 		line-height: 38px;
-		padding-inline: 10px;
 	}
 	.hero-extra-text {
+		padding-inline: 10px;
 		font-size: 22px;
 		line-height: 28px;
-		padding-inline: 10px;
 	}
 }
 
@@ -414,65 +420,64 @@ main {
 }
 
 .cta-box {
-	max-width: 464px;
-	max-height: 266px;
-	height: 100%;
-	width: 100%;
-	background-color: #FFFFFF;
-	border-radius: 12.5px;
-	box-shadow: 0px 5px 56.28px 0px #0B173414;
-	padding: 32px 34px 22px 34px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	max-width: 464px;
+	max-height: 266px;
+	height: 100%;
+	width: 100%;
+	padding: 32px 34px 22px 34px;
+	border-radius: 12.5px;
+	box-shadow: 0px 5px 56.5px 0px #0B173414;
+	background-color: var(--white);
 }
 
 .cta-title {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 21px;
 	font-family: var(--pulp);
 	font-size: 33px;
 	font-weight: 600;
 	line-height: 37.57px;
 	text-align: center;
 	color: #0F385A;
-	margin: 0;
-	padding: 0;
-	padding-bottom: 21px;
+
 }
 
 .cta-button {
-	font-family: var(--inter);
+	max-width: 394px;
+	width: 100%;
 	padding-inline: 18.76px;
 	padding-block: 24px;
 	border-radius: 7.5px;
-	background: #2C8DFF;
-	color: #FFFFFF;
-	font-family: Inter;
+	background: var(--brand-blue);
+	font-family: var(--inter);
 	font-size: 23px;
 	font-weight: 600;
 	line-height: 27.84px;
+	color: var(--white);
 	text-align: center;
 	border: none;
-	max-width: 394px;
-	width: 100%;
 	transition: all 0.25s;
 }
 
 .cta-button:hover {
-	background: #1a5ca9;
+	background: var(--brand-blue-hover);
 	transition: all 0.25s;
 }
 
 .cta-phone {
+	padding: 0;
+	margin-block: 33px 5px;
 	font-family: var(--inter);
 	font-size: 21px;
 	font-weight: 600;
 	line-height: 25.41px;
 	text-align: center;
-	padding: 0;
-	margin-top: 33px;
-	margin-bottom: 5px;
-	color: #0C395B;
+	color: var(--brand-dark-blue);
 }
 
 .cta-phone .extension {
@@ -488,14 +493,14 @@ main {
 }
 
 .cta-hours {
+	padding: 0;
+	margin: 0;
 	font-family: var(--inter);
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 500;
 	line-height: 21.78px;
 	text-align: left;
-	padding: 0;
-	margin: 0;
 	color: #555555;
 }
 
@@ -504,21 +509,21 @@ main {
 		padding-inline: 20px;
 	}
 	.cta-button {
-		font-size: 20px;
-		line-height: 24px;
 		padding: 16px;
 		max-width: 360px;
+		font-size: 20px;
+		line-height: 24px;
 	}
 	.cta-title {
+		margin: 0;
+		padding-inline: 0;
+		padding-block: 0 21px;
 		font-size: 30px;
 		line-height: 35px;
-		margin: 0;
-		padding: 0;
-		padding-bottom: 21px;
 	}
 	.cta-phone {
-		font-size: 20px;
 		margin-top: 27px;
+		font-size: 20px;
 	}
 	.cta-hours {
 		font-size: 16px;
@@ -527,18 +532,18 @@ main {
 
 @media screen and (max-width: 40em) {
 	.cta-title {
+		padding-bottom: 18px;
 		font-size: 28px;
 		line-height: 32px;
-		padding-bottom: 18px;
 	}
 	.cta-button {
+		padding: 16px;
 		font-size: 18px;
 		line-height: 22px;
-		padding: 16px;
 	}
 	.cta-phone {
-		font-size: 16px;
 		margin-top: 25px;
+		font-size: 16px;
 	}
 	.cta-hours {
 		font-size: 16px;
@@ -546,15 +551,15 @@ main {
 }
 
 .hero-image-box {
-	position: relative;
-	background: #E5EEFF;
-	border-radius: 50%;
-	width: 476px;
-	height: 470px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
+	position: relative;
+	border-radius: 50%;
+	width: 476px;
+	height: 470px;
 	bottom: 20px; 
+	background: #E5EEFF;
 	opacity: 90%;
 	transition: all 1s;
 }
@@ -567,11 +572,11 @@ main {
 
 .hero-image {
 	position: relative;
-	border-radius: 50%;
 	width: 452px;
 	height: 446px;
 	bottom: 2px;
 	right: -5px;
+	border-radius: 50%;
 }
 
 footer {
@@ -580,11 +585,11 @@ footer {
 }
 
 footer svg {
-	border-bottom: 40px solid #FFFFFF;
+	border-bottom: 40px solid var(--white);
 }
 
 .green-text {
-	color: #5BBB47;
+	color: var(--brand-green);
 }
 
 @media screen and (max-width: 64em) {
