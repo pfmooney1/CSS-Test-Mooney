@@ -242,6 +242,7 @@ nav {
 	background: #2C8DFF;
 	border-radius: 50%;
 	padding: 5px 5px;
+	transition: all 0.35s;
 }
 
 .contact-number {
@@ -259,10 +260,6 @@ nav {
 	text-decoration: none;
 }
 
-.contact-number a:hover {
-	text-decoration: underline;
-}
-
 .contact-extension {
 	display: flex;
 	align-items: center;
@@ -278,9 +275,18 @@ nav {
 	text-decoration: none;
 }
 
+.contact-number a:hover,
 .contact-extension a:hover {
 	text-decoration: underline;
+	transition: all 0.25s;
 }
+
+.contact-number:hover .contact-icon,
+.contact-extension:hover .contact-icon {
+	background: #1a5ca9;
+	transition: all 0.25s;
+}
+
 
 @media screen and (max-width: 64em) {
 	.contact-extension {
@@ -319,6 +325,7 @@ main {
 }
 
 .hero-text {
+	position: relative;
 	font-family: var(--pulp);
 	font-weight: 500;
 	font-size: 58px;
@@ -326,15 +333,34 @@ main {
 	color: #0F385A;
 	margin-block: 102px 64px;
 	padding-right: 75px;
+	bottom: 30px; 
+	opacity: 50%;
+	transition: all 1s;
+}
+
+.page-loaded .hero-text {
+	bottom: 0px; 
+	opacity: 100%;
+	transition: all 1s;
 }
 
 .hero-extra-text {
+	position: relative;
 	font-family: var(--pulp);
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 43.2px;
 	color: #0C395B;
 	padding-right: 75px;
+	bottom: 30px; 
+	opacity: 50%;
+	transition: all 1s;
+}
+
+.page-loaded .hero-extra-text {
+	bottom: 0px; 
+	opacity: 100%;
+	transition: all 1s;
 }
 
 @media screen and (max-width: 64em) {
@@ -429,10 +455,12 @@ main {
 	border: none;
 	max-width: 394px;
 	width: 100%;
+	transition: all 0.25s;
 }
 
 .cta-button:hover {
 	background: #1a5ca9;
+	transition: all 0.25s;
 }
 
 .cta-phone {
@@ -518,6 +546,7 @@ main {
 }
 
 .hero-image-box {
+	position: relative;
 	background: #E5EEFF;
 	border-radius: 50%;
 	width: 476px;
@@ -525,6 +554,15 @@ main {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
+	bottom: 20px; 
+	opacity: 90%;
+	transition: all 1s;
+}
+
+.page-loaded .hero-image-box {
+	bottom: 0px; 
+	opacity: 100%;
+	transition: all 1s;
 }
 
 .hero-image {
