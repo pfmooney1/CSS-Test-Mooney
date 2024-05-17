@@ -1,171 +1,40 @@
-
 @font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-MediumItalic.eot');
-    src: local('Pulp Display Medium Italic'), local('PulpDisplay-MediumItalic'),
-        url('fonts/PulpDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-MediumItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-MediumItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+	font-family: 'Pulp Display';
+	src: url('fonts/PulpDisplay-Bold.eot');
+	src: local('Pulp Display Bold'), local('PulpDisplay-Bold'),
+		url('fonts/PulpDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PulpDisplay-Bold.woff2') format('woff2'),
+		url('fonts/PulpDisplay-Bold.woff') format('woff'),
+		url('fonts/PulpDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-Bold.eot');
-    src: local('Pulp Display Bold'), local('PulpDisplay-Bold'),
-        url('fonts/PulpDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-Bold.woff2') format('woff2'),
-        url('fonts/PulpDisplay-Bold.woff') format('woff'),
-        url('fonts/PulpDisplay-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Pulp Display Extra';
+	src: url('fonts/PulpDisplay-ExtraBold.eot');
+	src: local('Pulp Display Extra Bold'), local('PulpDisplay-ExtraBold'),
+		url('fonts/PulpDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PulpDisplay-ExtraBold.woff2') format('woff2'),
+		url('fonts/PulpDisplay-ExtraBold.woff') format('woff'),
+		url('fonts/PulpDisplay-ExtraBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-BoldItalic.eot');
-    src: local('Pulp Display Bold Italic'), local('PulpDisplay-BoldItalic'),
-        url('fonts/PulpDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-BoldItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-BoldItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display Extra';
-    src: url('fonts/PulpDisplay-ExtraBold.eot');
-    src: local('Pulp Display Extra Bold'), local('PulpDisplay-ExtraBold'),
-        url('fonts/PulpDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-ExtraBold.woff2') format('woff2'),
-        url('fonts/PulpDisplay-ExtraBold.woff') format('woff'),
-        url('fonts/PulpDisplay-ExtraBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-Light.eot');
-    src: local('Pulp Display Light'), local('PulpDisplay-Light'),
-        url('fonts/PulpDisplay-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-Light.woff2') format('woff2'),
-        url('fonts/PulpDisplay-Light.woff') format('woff'),
-        url('fonts/PulpDisplay-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-Medium.eot');
-    src: local('Pulp Display Medium'), local('PulpDisplay-Medium'),
-        url('fonts/PulpDisplay-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-Medium.woff2') format('woff2'),
-        url('fonts/PulpDisplay-Medium.woff') format('woff'),
-        url('fonts/PulpDisplay-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display Extra';
-    src: url('fonts/PulpDisplay-ExtraLight.eot');
-    src: local('Pulp Display Extra Light'), local('PulpDisplay-ExtraLight'),
-        url('fonts/PulpDisplay-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-ExtraLight.woff2') format('woff2'),
-        url('fonts/PulpDisplay-ExtraLight.woff') format('woff'),
-        url('fonts/PulpDisplay-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display Extra';
-    src: url('fonts/PulpDisplay-ExtraBoldItalic.eot');
-    src: local('Pulp Display Extra Bold Italic'), local('PulpDisplay-ExtraBoldItalic'),
-        url('fonts/PulpDisplay-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-ExtraBoldItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-ExtraBoldItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-RegularItalic.eot');
-    src: local('Pulp Display Italic'), local('PulpDisplay-RegularItalic'),
-        url('fonts/PulpDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-RegularItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-RegularItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display Extra';
-    src: url('fonts/PulpDisplay-ExtraLightItalic.eot');
-    src: local('Pulp Display Extra Light Italic'), local('PulpDisplay-ExtraLightItalic'),
-        url('fonts/PulpDisplay-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-ExtraLightItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-ExtraLightItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-LightItalic.eot');
-    src: local('Pulp Display Light Italic'), local('PulpDisplay-LightItalic'),
-        url('fonts/PulpDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-LightItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-LightItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display';
-    src: url('fonts/PulpDisplay-Regular.eot');
-    src: local('Pulp Display'), local('PulpDisplay-Regular'),
-        url('fonts/PulpDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-Regular.woff2') format('woff2'),
-        url('fonts/PulpDisplay-Regular.woff') format('woff'),
-        url('fonts/PulpDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pulp Display Semi';
-    src: url('fonts/PulpDisplay-SemiBoldItalic.eot');
-    src: local('Pulp Display Semi Bold Italic'), local('PulpDisplay-SemiBoldItalic'),
-        url('fonts/PulpDisplay-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PulpDisplay-SemiBoldItalic.woff2') format('woff2'),
-        url('fonts/PulpDisplay-SemiBoldItalic.woff') format('woff'),
-        url('fonts/PulpDisplay-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
+	font-family: 'Pulp Display';
+	src: url('fonts/PulpDisplay-Medium.eot');
+	src: local('Pulp Display Medium'), local('PulpDisplay-Medium'),
+		url('fonts/PulpDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PulpDisplay-Medium.woff2') format('woff2'),
+		url('fonts/PulpDisplay-Medium.woff') format('woff'),
+		url('fonts/PulpDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -195,10 +64,22 @@
 }
 
 
+@font-face {
+	font-family: 'Pulp Display';
+	src: url('fonts/PulpDisplay-Regular.eot');
+	src: local('Pulp Display'), local('PulpDisplay-Regular'),
+		url('fonts/PulpDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PulpDisplay-Regular.woff2') format('woff2'),
+		url('fonts/PulpDisplay-Regular.woff') format('woff'),
+		url('fonts/PulpDisplay-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--inter: Inter, sans-serif;
 	--pulp: "Pulp Display", sans-serif;
-
 }
 
 body {
@@ -208,8 +89,8 @@ body {
 
 header {
 	width: 100%;
-	height: 132px;
 	background: #FFFFFF;
+	height: 132px;
 }
 
 nav {
@@ -223,20 +104,27 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #fff;
+	gap: 50px;
 }
 
 @media screen and (max-width: 40em) {
+	header {
+		width: 100%;
+		background: #FFFFFF;
+		height: fit-content;
+	}
 	nav {
 		flex-direction: column;
+		gap: 20px;
+		padding-bottom: 15px;
 	}
-}
-
-@media screen and (max-width: 64em) {
 }
 
 .logo-container .logo {
 	display: flex;
 	flex-direction: column;
+	width: 320px;
+	height: 61px;
 }
 
 .logo-container .logo-text {
@@ -249,27 +137,19 @@ nav {
 	padding-inline: 50px 0;
 	margin: -4px 0 0 0;
 	z-index: 10
-
 }
 
 .header-contact-container {
 	max-width: 701px;
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: auto auto auto;
 	padding: 12px 20px;
 	align-items: center;
-	justify-contact: space-between;
+	justify-content: space-between;
 	background: #F7F7FB;
 	border-radius: 8px;
 	gap: 48px;
-}
-
-@media screen and (max-width: 40em) {
-	.logo-container .logo {
-		width: 280px;
-		height: 53px;
-		padding-block: 10px;
-	}
 }
 
 @media screen and (max-width: 64em) {
@@ -278,14 +158,49 @@ nav {
 		height: 48px;
 		padding-block: 10px;
 	}
-
 	.header-contact-container {
 		padding: 8px 16px;
 		gap: 20px;
 	}
 }
 
-.contact-title-and-hours {
+@media screen and (max-width: 800px) {
+	.header-contact-container {
+		grid-template-rows: 1fr auto;
+		grid-template-columns: 1fr auto;
+		grid-template-areas: 
+			"info number"
+			"info extension";
+		row-gap: 5px;
+		column-gap: 10px;
+	}
+	.contact-title-and-hours {
+		grid-area: info;
+	}
+	.contact-number {
+		grid-area: number;
+	}
+	.contact-extension {
+		grid-area: extension;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.header-contact-container {
+		grid-template-rows: auto auto;
+		grid-template-columns: auto auto;
+		grid-template-areas: 
+			"info info"
+			"number extension";
+		row-gap: 5px;
+		column-gap: 10px;
+		padding-inline: 24px;
+	}
+	.logo-container .logo {
+		/* width: 180px; */
+		/* height: 34px; */
+		padding-block: 10px;
+	}
 }
 
 .contact-title {
@@ -293,9 +208,8 @@ nav {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19.4px;
-	letter-spacing: -1%;
 	color: #0C395B;
-	padding: 0;
+	padding: 0 0 2px 0;
 	margin: 0;
 }
 
@@ -309,17 +223,18 @@ nav {
 	color: #758EB2;
 }
 
-@media screen and (max-width: 40em) {
-
-}
-
 @media screen and (max-width: 64em) {
 	.contact-title {
 		font-size: 12px;
 	}
-
 	.contact-hours {
 		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.contact-title-and-hours {
+		text-align: center;
 	}
 }
 
@@ -367,37 +282,50 @@ nav {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 40em) {
-	
-}
-
 @media screen and (max-width: 64em) {
 	.contact-extension {
 		gap: 5px
 	}
-
+	.contact-number,
+	.contact-extension {
+		gap: 6px;
+	}
 	.contact-number a,
 	.contact-extension a {
 		font-size: 14px;
 	}
 }
 
+@media screen and (max-width: 800px) {
+	.contact-number a,
+	.contact-extension a {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.contact-icon {
+		width: 12px;
+		height: 12px;
+	}
+}
 
 main {
 	max-width: 1200px;
 	width: calc(100% - 40px);
-	padding-inline: 20px;
+	padding-inline: 30px;
 	height: 100%;
 	margin: 0 auto;
 }
 
 .hero-text {
 	font-family: var(--pulp);
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 58px;
 	line-height: 63.8px;
 	color: #0F385A;
-	margin-block: 102px 38px;
+	margin-block: 102px 64px;
+	padding-right: 75px;
 }
 
 .hero-extra-text {
@@ -406,6 +334,40 @@ main {
 	font-size: 36px;
 	line-height: 43.2px;
 	color: #0C395B;
+	padding-right: 75px;
+}
+
+@media screen and (max-width: 64em) {
+	main {
+		padding-inline: 20px;
+	}
+	.hero-text {
+		font-size: 38px;
+		line-height: 50px;
+		margin-block: 60px 45px;
+		padding-inline: 30px;
+		text-align: center;
+	}
+	.hero-extra-text {
+		font-size: 22px;
+		line-height: 25px;
+		padding-inline: 30px;
+		text-align: center;
+		margin-block: 45px;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.hero-text {
+		font-size: 30px;
+		line-height: 38px;
+		padding-inline: 10px;
+	}
+	.hero-extra-text {
+		font-size: 22px;
+		line-height: 28px;
+		padding-inline: 10px;
+	}
 }
 
 .cta-and-image-container {
@@ -414,23 +376,22 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	max-width: 1200px;
-}
-
-@media screen and (max-width: 40em) {
-	
+	max-width: 1150px;
+	gap: 80px;
 }
 
 @media screen and (max-width: 64em) {
 	.cta-and-image-container {
 		flex-direction: column;
+		gap: 40px;
 	}
-
 }
 
 .cta-box {
-	min-width: 464px;
-	min-height: 266px;
+	max-width: 464px;
+	max-height: 266px;
+	height: 100%;
+	width: 100%;
 	background-color: #FFFFFF;
 	border-radius: 12.5px;
 	box-shadow: 0px 5px 56.28px 0px #0B173414;
@@ -444,7 +405,7 @@ main {
 .cta-title {
 	font-family: var(--pulp);
 	font-size: 33px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 37.57px;
 	text-align: center;
 	color: #0F385A;
@@ -455,7 +416,8 @@ main {
 
 .cta-button {
 	font-family: var(--inter);
-	padding: 18.76px;
+	padding-inline: 18.76px;
+	padding-block: 24px;
 	border-radius: 7.5px;
 	background: #2C8DFF;
 	color: #FFFFFF;
@@ -463,19 +425,18 @@ main {
 	font-size: 23px;
 	font-weight: 600;
 	line-height: 27.84px;
-	letter-spacing: -0.015em;
 	text-align: center;
 	border: none;
-	min-width: 394px;
+	max-width: 394px;
+	width: 100%;
 }
 
 .cta-button:hover {
 	background: #1a5ca9;
 }
 
-
 .cta-phone {
-	font-family: Inter;
+	font-family: var(--inter);
 	font-size: 21px;
 	font-weight: 600;
 	line-height: 25.41px;
@@ -489,6 +450,7 @@ main {
 .cta-phone .extension {
 	color: inherit;
 }
+
 .cta-phone a {
 	text-decoration: none;
 }
@@ -503,11 +465,56 @@ main {
 	font-style: italic;
 	font-weight: 500;
 	line-height: 21.78px;
-	letter-spacing: -0.015em;
 	text-align: left;
 	padding: 0;
 	margin: 0;
 	color: #555555;
+}
+
+@media screen and (max-width: 64em) {
+	.cta-box {
+		padding-inline: 20px;
+	}
+	.cta-button {
+		font-size: 20px;
+		line-height: 24px;
+		padding: 16px;
+		max-width: 360px;
+	}
+	.cta-title {
+		font-size: 30px;
+		line-height: 35px;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 21px;
+	}
+	.cta-phone {
+		font-size: 20px;
+		margin-top: 27px;
+	}
+	.cta-hours {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.cta-title {
+		font-size: 28px;
+		line-height: 32px;
+		padding-bottom: 18px;
+	}
+	.cta-button {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 16px;
+	}
+	.cta-phone {
+		font-size: 16px;
+		margin-top: 25px;
+	}
+	.cta-hours {
+		font-size: 16px;
+	}
 }
 
 .hero-image-box {
@@ -533,20 +540,35 @@ footer {
 	width: 100%;
 	height: fit-content;
 }
+
 footer svg {
 	border-bottom: 40px solid #FFFFFF;
 }
 
 .green-text {
 	color: #5BBB47;
-	white-space: pre;
-}
-
-
-@media screen and (max-width: 40em) {
-	
 }
 
 @media screen and (max-width: 64em) {
+	.hero-image-box {
+		width: 476px;
+		height: 470px;
+	}
+	.hero-image {
+		width: 452px;
+		height: 446px;
+	}
+}
 
+@media screen and (max-width: 40em) {
+	.hero-image-box {
+		width: 280px;
+		height: 276px;
+	}
+	.hero-image {
+		width: 270px;
+		height: 266px;
+		bottom: 0px;
+		right: 0px;
+	}
 }
